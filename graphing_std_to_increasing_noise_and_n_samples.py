@@ -9,7 +9,7 @@ from functions import find_blip,noisemaker,generate_data
 interval1=np.linspace(1,10,50)
 deviations1=np.zeros([len(interval1)])
 errors1=np.zeros([len(interval1)])
-pulse_model=np.load('pulsemodel.npy')
+pulse_model=np.load('toymodel.npy')
 for i in range(len(interval1)):
     print(i)
     n_samples=500
