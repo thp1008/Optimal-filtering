@@ -37,7 +37,7 @@ def amp_matrix(pulse_model):
     M=np.ones((len(pulse_model),2))
     M[:,0]=pulse_model
     MT=M.transpose()
-    R=np.diag([1]*len(pulse_model))
+    R=np.diag([18.227316103219753]*len(pulse_model))
     invR=np.linalg.inv(R)
     block1=np.linalg.inv(np.dot(MT,np.dot(invR,M)))
     block2=np.dot(block1,np.dot(MT,invR))
