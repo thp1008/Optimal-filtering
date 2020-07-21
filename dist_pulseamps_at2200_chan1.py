@@ -7,7 +7,7 @@ from scipy.stats import norm
 f=files.LJHFile("20200224_112412_chan1.ljh")
 amplitudes=np.zeros(0)
 amplitudes1=np.zeros(0)
-pulsemod=np.load('pulsemodel.npy')
+pulsemod=np.load('pulsemodel_chan1.npy')
 block2=amp_matrix(pulsemod)
 # def gauss(x,mu,sigma,A):
 #     return A*np.exp(-(x-mu)**2/2/sigma**2)

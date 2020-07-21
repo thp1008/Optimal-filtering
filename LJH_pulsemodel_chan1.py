@@ -28,8 +28,9 @@ pulsemod=traces/count
 pulsemod1=traces1/count1
 pulsemod2=traces2/count2
 np.save('pulsemodel.npy',pulsemod)
+np.save('pulsemodel5400.npy',pulsemod1)
 x=np.arange(1285)
-plt.plot(x,pulsemod)
+plt.plot(x,pulsemod1)
 plt.show()
 plt.savefig('figures/pulsemodel.pdf')
 
