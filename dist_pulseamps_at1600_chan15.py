@@ -8,7 +8,7 @@ f=files.LJHFile("20200224_112412_chan15.ljh")
 amplitudes=np.zeros(0)
 amplitudes1=np.zeros(0)
 pulsemod=np.load('pulsemodel_chan15.npy')
-block2=amp_matrix(pulsemod,var=3.3381526549392895)
+block2=amp_matrix(pulsemod)
 # def gauss(x,mu,sigma,A):
 #     return A*np.exp(-(x-mu)**2/2/sigma**2)
 # def bimodal(x,mu1,sigma1,A1,mu2,sigma2,A2,offset):

@@ -72,6 +72,8 @@ def improv_graph(f):
     plt.plot(x2,gauss(x2,*pars2),color='blue')
     plt.plot(x3,gauss(x3,*pars3),color='red')
     plt.plot(x4,gauss(x4,*pars4),color='magenta')
+    plt.xlabel('adc')
+    plt.ylabel('count')
     print(improvement)
 count=0
 for filename in os.listdir('Data'):
@@ -79,8 +81,8 @@ for filename in os.listdir('Data'):
         f=files.LJHFile('Data/'+filename)
         
         count+=1
-        if count==5:
+        if count==6:
             improv_graph(f)
-        elif count>5:
+        elif count>6    :
             break
     
